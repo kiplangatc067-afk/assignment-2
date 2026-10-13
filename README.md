@@ -16,8 +16,8 @@ This is my personal portfolio website created as a first-year ICT student at KCA
 - CSS3
 - JavaScript
 
-## How to Run
-Open `index.html` in a browser, then select **Projects** from the navigation bar.
+## site
+assignment-2-oul0fbdsm-kiplangatc067-afk.vercel.app
 
 ## Author
 - Name: Brandon Kiplangat
