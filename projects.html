@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Skills | My Portfolio</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h1>My Projects, Skills & Services</h1>
+            <p>A collection of the work and skills I am developing as an ICT student.</p>
+        </section>
+
+        <section class="section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><div class="skill-label"><span>HTML</span><span>85%</span></div><div class="progress"><span style="width:85%"></span></div></div>
+                <div class="skill"><div class="skill-label"><span>CSS</span><span>80%</span></div><div class="progress"><span style="width:80%"></span></div></div>
+                <div class="skill"><div class="skill-label"><span>JavaScript</span><span>55%</span></div><div class="progress"><span style="width:65%"></span></div></div>
+                <div class="skill"><div class="skill-label"><span>Microsoft Word</span><span>100%</span></div><div class="progress"><span style="width:85%"></span></div></div>
+                <div class="skill"><div class="skill-label"><span>Microsoft Excel</span><span>100%</span></div><div class="progress"><span style="width:75%"></span></div></div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-title-row">
+                <div>
+                    <h2>My Projects</h2>
+                    <p>Coursework and personal projects I have worked on.</p>
+                </div>
+                <div class="filter-buttons" aria-label="Project filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="coursework">Coursework</button>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card" data-category="web">
+                    <div class="project-icon">🌐</div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive portfolio website created to introduce myself, showcase my skills and share my projects.</p>
+                    <p class="tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <button class="details-btn" type="button">Show Details</button>
+                    <div class="project-details">This project is the continuation of my Web Technologies coursework and includes this Assignment 2 update.</div>
+                    <a class="project-link" href="index.html">View Project</a>
+                </article>
+
+                <article class="project-card" data-category="coursework">
+                    <div class="project-icon">💻</div>
+                    <h3>HTML & CSS Practice Site</h3>
+                    <p>A coursework project used to practise page structure, navigation, images, styling and responsive layouts.</p>
+                    <p class="tech"><strong>Technologies:</strong> HTML5, CSS3</p>
+                    <button class="details-btn" type="button">Show Details</button>
+                    <div class="project-details">I used this work to build a foundation in web development before adding JavaScript interactivity.</div>
+                    <span class="project-link placeholder">Coming Soon</span>
+                </article>
+
+                <article class="project-card" data-category="coursework">
+                    <div class="project-icon">📚</div>
+                    <h3>ICT Coursework Projects</h3>
+                    <p>A collection of university coursework and practical exercises that help me develop my computing skills.</p>
+                    <p class="tech"><strong>Technologies:</strong> HTML, CSS, JavaScript, Microsoft Office</p>
+                    <button class="details-btn" type="button">Show Details</button>
+                    <div class="project-details">More coursework projects will be added here as I complete them during my ICT studies.</div>
+                    <span class="project-link placeholder">Coming Soon</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card"><h3>Basic Website Design</h3><p>Simple HTML and CSS websites for personal projects and small portfolios.</p></div>
+                <div class="service-card"><h3>Document Formatting</h3><p>Basic formatting and organisation of documents using Microsoft Word.</p></div>
+                <div class="service-card"><h3>Beginner ICT Support</h3><p>Basic help with computer applications and beginner web development tasks.</p></div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to contact me, fill in the form below.</p>
+            <form id="contactForm" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <small class="error" id="nameError"></small>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+                <small class="error" id="emailError"></small>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+                <small class="error" id="messageError"></small>
+
+                <button class="button" type="submit">Send Message</button>
+                <p id="formSuccess" class="success" role="status"></p>
+            </form>
+            <p>Email: <a href="mailto:kiplangatc067@gmail.com">kiplangatc067@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
